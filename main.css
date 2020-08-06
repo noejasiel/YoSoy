@@ -23,8 +23,8 @@
   margin: 1em;
 }
 .img-logo {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .btn-mobile {
@@ -40,7 +40,7 @@
   height: 3px;
   margin: 6px 0;
   background-color: #252525;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s linear;
 }
 
 .menu {
@@ -68,7 +68,7 @@
   position: absolute;
   width: 60%;
   right: -1px;
-  top: 81px;
+  top: 65px;
   height: 100vh;
   background-color: #f2f2f2;
   transition: 0.3s linear;
@@ -101,21 +101,23 @@
 .btn-mobile-activo span:nth-child(1) {
   transform: rotate(45deg);
   position: relative;
-  top: 4px;
+  top: 8px;
+  transition: 0.3s linear;
 }
 .btn-mobile-activo span:nth-child(2) {
-  display: none;
+  opacity: 0;
+  transition: 0.4s linear;
 }
 .btn-mobile-activo span:nth-child(3) {
   transform: rotate(-45deg);
   position: relative;
-  bottom: 4px;
+  bottom: 8px;
+  transition: 0.3s linear;
 }
 
 /* hero */
 .Hero {
   height: 100vh;
-  min-height: 500px;
   background-image: url("./hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -136,7 +138,7 @@
 }
 .conteiner-hero h1::after {
   content: " Jasiel";
-  animation: iam 10s linear infinite;
+  animation: iam 8s linear infinite;
 }
 @keyframes iam {
   25% {
@@ -164,4 +166,25 @@
 .redes-sociales a i {
   color: #578ef3;
   font-size: 25px;
+}
+
+/* formacion */
+.Formacion {
+  width: 100%;
+}
+.conteiner-formacion {
+  width: 100%;
+  padding: 4em 0 2em 0;
+}
+.img-formacion {
+  max-width: 100%;
+  /* clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  ); */
 }
