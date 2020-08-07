@@ -13,7 +13,7 @@ btn.addEventListener("click", function hola() {
   // existe mi clase navbar-activo
   if (!padre_nav.classList[1]) {
     console.log("no existe mi clase");
-    padre_nav.classList.toggle("navbar-activo");
+    padre_nav.classList.add("navbar-activo");
   } else if (padre_nav.classList[1] && window.pageYOffset < 200) {
     padre_nav.classList.remove("navbar-activo");
   }
@@ -30,7 +30,12 @@ window.onscroll = function () {
 };
 
 // btn ancla del menu
+
 var btn_inicio = document.getElementById("bnt-inicio");
+var btn_formacion = document.getElementById("bnt-formacion");
+var btn_proyectos = document.getElementById("bnt-proyectos");
+var btn_contacto = document.getElementById("bnt-contacto");
+
 btn_inicio.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
@@ -38,8 +43,15 @@ btn_inicio.addEventListener("click", function () {
     btn.parentElement.parentElement.classList.remove("navbar-activo");
   }
 });
-
-// $(window).scroll(function () {
-//   if (this.scrollY > 20) {
-//   }
-// });
+btn_formacion.addEventListener("click", function () {
+  btn.classList.remove("btn-mobile-activo");
+  btn.nextElementSibling.classList.remove("menu-mobile");
+});
+btn_proyectos.addEventListener("click", function () {
+  btn.classList.remove("btn-mobile-activo");
+  btn.nextElementSibling.classList.remove("menu-mobile");
+});
+btn_contacto.addEventListener("click", function () {
+  btn.classList.remove("btn-mobile-activo");
+  btn.nextElementSibling.classList.remove("menu-mobile");
+});
