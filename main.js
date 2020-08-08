@@ -35,12 +35,12 @@ for (const iterator of U_card) {
 // }
 
 window.onscroll = function () {
-  // if (window.pageYOffset > 300) {
-  //   btn.parentElement.parentElement.classList.add("navbar-activo");
-  //   console.log("estoy a mas de 300");
-  // } else {
-  //   btn.parentElement.parentElement.classList.remove("navbar-activo");
-  // }
+  if (window.pageYOffset > 300) {
+    btn.parentElement.parentElement.classList.add("navbar-activo");
+    console.log("estoy a mas de 300");
+  } else {
+    btn.parentElement.parentElement.classList.remove("navbar-activo");
+  }
 
   // conforme se acerque a mi apartade de tecnologia agregaraemos la clase a mis span
   if (window.pageYOffset >= 1000 && window.pageYOffset <= 1300) {
