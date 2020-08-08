@@ -104,7 +104,7 @@
 .btn-mobile-activo span:nth-child(1) {
   transform: rotate(45deg);
   position: relative;
-  top: 8px;
+  top: 10px;
   transition: 0.3s linear;
 }
 .btn-mobile-activo span:nth-child(2) {
@@ -234,3 +234,161 @@
   padding: 1em;
   color: rgb(79, 123, 204);
 }
+
+/* tecnologias */
+
+.conteiner-lenguajes {
+  width: 100%;
+}
+.U-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em 0;
+}
+
+.U-img {
+  width: 50px;
+}
+/* barra de progreso */
+/* progress[value] {
+  width: 80%;
+  height: 30px;
+} */
+.barra {
+  height: 26px;
+  width: 70%;
+  padding: 0 0.2em;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 20px;
+}
+/* barras de progreso */
+.proggres-c {
+  height: 20px;
+  width: 70%;
+  background-color: #5492da;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proggres-c::after {
+  content: "70%";
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.proggres-html {
+  height: 20px;
+  width: 80%;
+  background-color: #5492da;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proggres-html::after {
+  content: "80%";
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.proggres-css {
+  height: 20px;
+  width: 80%;
+  background-color: #5492da;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proggres-css::after {
+  content: "80%";
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.proggres-js {
+  height: 20px;
+  width: 75%;
+  background-color: #5492da;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proggres-js::after {
+  content: "75%";
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.proggres-sass {
+  height: 20px;
+  width: 80%;
+  background-color: #5492da;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proggres-sass::after {
+  content: "80%";
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* about sobre cada tecnologia */
+.span {
+  height: 3px;
+  background-color: black;
+  width: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.span-arrow1 {
+  transform: rotate(45deg);
+  right: -4px;
+}
+.span-arrow2 {
+  transform: rotate(-45deg);
+  right: 4px;
+}
+
+.span-arrow1-active {
+  transform: rotate(45deg);
+  animation: span1 2s linear normal;
+  right: -4px;
+}
+.span-arrow2-active {
+  animation: span2 2s linear normal;
+  transform: rotate(-45deg);
+  right: 4px;
+}
+
+@keyframes span1 {
+  25% {
+    transform: rotate(150deg);
+  }
+  50% {
+    transform: rotate(250deg);
+  }
+  75% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(420deg);
+  }
+}
+@keyframes span2 {
+  25% {
+    transform: rotate(-150deg);
+  }
+  50% {
+    transform: rotate(-250deg);
+  }
+  75% {
+    transform: rotate(-300deg);
+  }
+  100% {
+    transform: rotate(-420deg);
+}
+
+/*  */
