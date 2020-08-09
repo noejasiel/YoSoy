@@ -245,6 +245,17 @@
   justify-content: center;
   align-items: center;
   margin: 1em 0;
+  cursor: pointer;
+  outline: none;
+  transition: .4s linear;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  
 }
 
 .U-img {
@@ -274,11 +285,48 @@
   justify-content: center;
   align-items: center;
 }
+/* porcentaje dentro de la barra de progreso  👇    */
 .proggres-c::after {
   content: "70%";
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
+/* mi info cada que le de click a un lenguaje */
+
+.U-text{
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.5em 0;
+}
+.U-card-active{
+  background-color: #bfd6eba1;
+  margin: 1em 0 0 0;
+  padding-top: .5em;
+  transition: .4s linear;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  cursor: pointer;
+}
+.U-info{
+  width: 100%;
+  background-color: #bfd6eba1;
+  transition: .4s linear;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: none;
+}
+.span-active1{
+  transform: rotate(45deg);
+  right: -5px;
+  transition: .4s linear;
+}
+.span-active2{
+  transform: rotate(-45deg);
+  right: 15px;
+  transition: .4s linear;
+
+}
+
 .proggres-html {
   height: 20px;
   width: 80%;
@@ -342,6 +390,7 @@
   width: 20px;
   position: relative;
   cursor: pointer;
+  transition: .4s linear;
 }
 .span-arrow1 {
   transform: rotate(45deg);
@@ -354,11 +403,11 @@
 
 .span-arrow1-active {
   transform: rotate(45deg);
-  animation: span1 2s linear normal;
+  animation: span1 .85s linear normal;
   right: -4px;
 }
 .span-arrow2-active {
-  animation: span2 2s linear normal;
+  animation: span2 .85s linear normal;
   transform: rotate(-45deg);
   right: 4px;
 }

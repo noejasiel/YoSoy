@@ -3,6 +3,15 @@ var menu;
 var padre_nav;
 var redes = document.getElementById("redes");
 
+function Comprobar(info) {
+  // console.log(info.style);
+  if (info.style.display == "") {
+    return (info.style.display = "block");
+  } else {
+    return (info.style.display = "");
+  }
+}
+
 btn.addEventListener("click", function hola() {
   padre_nav = btn.parentElement.parentElement;
   btn.classList.toggle("btn-mobile-activo");
@@ -18,6 +27,7 @@ btn.addEventListener("click", function hola() {
     padre_nav.classList.remove("navbar-activo");
   }
 });
+
 // mover mis span a medida que el scroll baja
 var span1 = [];
 var span2 = [];
@@ -27,14 +37,32 @@ for (const iterator of U_card) {
   span2.push(iterator.querySelector("span").nextElementSibling);
 }
 
-// console.log(span1);
-// console.log(span2);
+for (const iterator of U_card) {
+  iterator.addEventListener("click", function () {
+    // console.log(iterator);
+    var span_x1;
+    var span_x2;
+    iterator.classList.toggle("U-card-active");
 
-// for (let i = 0; i < spans.length; i++) {
-//   console.log(spans[i]);
-// }
+    // añadimos una funcion que se encarga de verificar si existe mi un
+    //  style display para asi ponerlo en block o dejarlo igual
+    var info = iterator.nextElementSibling;
+    // añadiendo mis span de cada iteraciona  una variable
+    span_x1 = iterator.querySelector("span");
+    span_x2 = iterator.querySelector("span").nextElementSibling;
+    Comprobar(info);
+    // a estos span les añado y les quito clases que necesito
+    span_x1.classList.toggle("span-arrow1");
+    span_x2.classList.toggle("span-arrow2");
+    span_x1.classList.remove("span-arrow1-active");
+    span_x2.classList.remove("span-arrow2-active");
+    span_x1.classList.toggle("span-active1");
+    span_x2.classList.toggle("span-active2");
+  });
+}
 
 window.onscroll = function () {
+  // al llegarcerca de los 300px se agregara la clase al navbar
   if (window.pageYOffset > 300) {
     btn.parentElement.parentElement.classList.add("navbar-activo");
     console.log("estoy a mas de 300");
@@ -43,7 +71,7 @@ window.onscroll = function () {
   }
 
   // conforme se acerque a mi apartade de tecnologia agregaraemos la clase a mis span
-  if (window.pageYOffset >= 1000 && window.pageYOffset <= 1300) {
+  if (window.pageYOffset > 1400 && window.pageYOffset < 1700) {
     for (const iterator of span1) {
       iterator.classList.add("span-arrow1-active");
     }
