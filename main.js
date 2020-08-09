@@ -2,28 +2,6 @@ const btn = document.getElementById("btn");
 var menu;
 var padre_nav;
 var redes = document.getElementById("redes");
-var U_card_about = document.getElementById("U_card");
-
-// var span_x1 = U_card_about.querySelector("span");
-// var span_x2 = U_card_about.querySelector("span").nextElementSibling;
-
-// // aadd clases cuando de se click al mi Ucard about
-// U_card_about.addEventListener("click", function () {
-//   U_card_about.classList.toggle("U-card-active");
-
-//   // añadimos una funcion que se encarga de verificar si existe mi un
-//   //  style display para asi ponerlo en block o dejarlo igual
-//   var info = U_card_about.nextElementSibling;
-//   Comprobar(info);
-
-//   // span
-//   span_x1.classList.toggle("span-arrow1");
-//   span_x2.classList.toggle("span-arrow2");
-//   span_x1.classList.remove("span-arrow1-active");
-//   span_x2.classList.remove("span-arrow2-active");
-//   span_x1.classList.toggle("span-active1");
-//   span_x2.classList.toggle("span-active2");
-// });
 
 function Comprobar(info) {
   // console.log(info.style);
@@ -58,56 +36,30 @@ for (const iterator of U_card) {
   span1.push(iterator.querySelector("span"));
   span2.push(iterator.querySelector("span").nextElementSibling);
 }
-console.log(span1);
 
-// var span_x1 = [];
-// var span_x2 = [];
 for (const iterator of U_card) {
-  // span_x1.push(iterator.querySelector("span"));
-  // span_x2.push(iterator.querySelector("span").nextElementSibling);
-  // console.log(span_x1.classList, span_x2.classList);
   iterator.addEventListener("click", function () {
     // console.log(iterator);
-
+    var span_x1;
+    var span_x2;
     iterator.classList.toggle("U-card-active");
 
     // añadimos una funcion que se encarga de verificar si existe mi un
     //  style display para asi ponerlo en block o dejarlo igual
     var info = iterator.nextElementSibling;
+    // añadiendo mis span de cada iteraciona  una variable
+    span_x1 = iterator.querySelector("span");
+    span_x2 = iterator.querySelector("span").nextElementSibling;
     Comprobar(info);
-
-    // span_x1[iterator].classList.toggle("span-arrow1");
-    // span_x2[iterator].classList.toggle("span-arrow2");
-    // span_x1[iterator].classList.remove("span-arrow1-active");
-    // span_x2[iterator].classList.remove("span-arrow2-active");
-    // span_x1[iterator].classList.toggle("span-active1");
-    // span_x2[iterator].classList.toggle("span-active2");
+    // a estos span les añado y les quito clases que necesito
+    span_x1.classList.toggle("span-arrow1");
+    span_x2.classList.toggle("span-arrow2");
+    span_x1.classList.remove("span-arrow1-active");
+    span_x2.classList.remove("span-arrow2-active");
+    span_x1.classList.toggle("span-active1");
+    span_x2.classList.toggle("span-active2");
   });
 }
-// // aadd clases cuando de se click al mi Ucard about
-// U_card_about.addEventListener("click", function () {
-//   U_card_about.classList.toggle("U-card-active");
-
-//   // añadimos una funcion que se encarga de verificar si existe mi un
-//   //  style display para asi ponerlo en block o dejarlo igual
-//   var info = U_card_about.nextElementSibling;
-//   Comprobar(info);
-
-//   // span
-//   span_x1.classList.toggle("span-arrow1");
-//   span_x2.classList.toggle("span-arrow2");
-//   span_x1.classList.remove("span-arrow1-active");
-//   span_x2.classList.remove("span-arrow2-active");
-//   span_x1.classList.toggle("span-active1");
-//   span_x2.classList.toggle("span-active2");
-// });
-
-// console.log(span1);
-// console.log(span2);
-
-// for (let i = 0; i < spans.length; i++) {
-//   console.log(spans[i]);
-// }
 
 window.onscroll = function () {
   // al llegarcerca de los 300px se agregara la clase al navbar
