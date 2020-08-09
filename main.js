@@ -71,7 +71,7 @@ window.onscroll = function () {
   }
 
   // conforme se acerque a mi apartade de tecnologia agregaraemos la clase a mis span
-  if (window.pageYOffset > 1400 && window.pageYOffset < 1700) {
+  if (window.pageYOffset > 1200 && window.pageYOffset < 1400) {
     for (const iterator of span1) {
       iterator.classList.add("span-arrow1-active");
     }

@@ -20,11 +20,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1em;
+  margin: .5em;
 }
 .img-logo {
-  width: 30px;
-  height: 30px;
+  width: 34px;
+  height: 34px;
+  margin-left: .5em;
 }
 
 .btn-mobile {
@@ -39,7 +40,7 @@
   display: block;
   height: 3px;
   margin: 6px 0;
-  background-color: #252525;
+  background-color: #6584b3;
   transition: 0.5s linear;
 }
 
@@ -68,13 +69,14 @@
   position: absolute;
   width: 60%;
   right: -1px;
-  top: 65px;
+  top: 50.4px;
   height: 100vh;
   background-color: #f2f2f2;
   transition: 0.3s linear;
   background-image: url("./bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
+  box-shadow: 0px 12px 15px -2px #6584b3;
 }
 .menu-mobile a {
   text-decoration: none;
@@ -100,6 +102,8 @@
 
 .navbar-activo {
   background-color: #f2f2f2;
+  /* border-bottom: 1px solid #6584b338; */
+  box-shadow: -1px 0px 10px -2px #6584b3;
 }
 .btn-mobile-activo span:nth-child(1) {
   transform: rotate(45deg);
@@ -176,7 +180,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: url("./bg-pattern-intro-right-mobile.svg");
+  background-image: url("./bg-pattern-intro-left-mobile.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -278,7 +282,7 @@
 /* barras de progreso */
 .proggres-c {
   height: 20px;
-  width: 70%;
+  width: 75%;
   background-color: #5492da;
   border-radius: 10px;
   display: flex;
@@ -287,7 +291,7 @@
 }
 /* porcentaje dentro de la barra de progreso  👇    */
 .proggres-c::after {
-  content: "70%";
+  content: "75%";
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -357,7 +361,7 @@
 }
 .proggres-js {
   height: 20px;
-  width: 75%;
+  width: 70%;
   background-color: #5492da;
   border-radius: 10px;
   display: flex;
@@ -365,7 +369,7 @@
   align-items: center;
 }
 .proggres-js::after {
-  content: "75%";
+  content: "70%";
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -386,7 +390,7 @@
 /* about sobre cada tecnologia */
 .span {
   height: 3px;
-  background-color: black;
+  background-color: #6584b3;
   width: 20px;
   position: relative;
   cursor: pointer;
