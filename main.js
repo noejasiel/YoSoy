@@ -1,7 +1,13 @@
 const btn = document.getElementById("btn");
 var menu;
 var padre_nav;
+padre_nav = btn.parentElement.parentElement;
 var redes = document.getElementById("redes");
+var desplace;
+
+// animacion
+
+console.log(window.screen.height);
 
 function Comprobar(info) {
   // console.log(info.style);
@@ -13,11 +19,11 @@ function Comprobar(info) {
 }
 
 btn.addEventListener("click", function hola() {
-  padre_nav = btn.parentElement.parentElement;
   btn.classList.toggle("btn-mobile-activo");
   menu = btn.nextElementSibling;
   menu.classList.toggle("menu-mobile");
   redes.classList.toggle("redes-sociales-activo");
+  padre_nav.parentElement.classList.toggle("hidden");
 
   // existe mi clase navbar-activo
   if (!padre_nav.classList[1]) {
@@ -65,12 +71,13 @@ window.onscroll = function () {
   // al llegarcerca de los 300px se agregara la clase al navbar
   if (window.pageYOffset > 300) {
     btn.parentElement.parentElement.classList.add("navbar-activo");
-    console.log("estoy a mas de 300");
+    // console.log("estoy a mas de 300");
   } else {
     btn.parentElement.parentElement.classList.remove("navbar-activo");
   }
 
   // conforme se acerque a mi apartade de tecnologia agregaraemos la clase a mis span
+
   if (window.pageYOffset > 1200 && window.pageYOffset < 1400) {
     for (const iterator of span1) {
       iterator.classList.add("span-arrow1-active");
@@ -96,9 +103,12 @@ var btn_proyectos = document.getElementById("bnt-proyectos");
 var btn_contacto = document.getElementById("bnt-contacto");
 var btn_tecnologia = document.getElementById("bnt-tecnologia");
 
+// funcionalidad a mis botones de la barra de nav menu
 btn_inicio.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
+  padre_nav.parentElement.classList.toggle("hidden");
+
   if (window.pageYOffset < 200) {
     btn.parentElement.parentElement.classList.remove("navbar-activo");
   }
@@ -106,16 +116,20 @@ btn_inicio.addEventListener("click", function () {
 btn_formacion.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
+  padre_nav.parentElement.classList.toggle("hidden");
 });
 btn_tecnologia.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
+  padre_nav.parentElement.classList.toggle("hidden");
 });
 btn_proyectos.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
+  padre_nav.parentElement.classList.toggle("hidden");
 });
 btn_contacto.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
+  padre_nav.parentElement.classList.toggle("hidden");
 });
