@@ -4,7 +4,7 @@
   font-family: "Alef", sans-serif;
 }
 
-.hidden{
+.hidden {
   overflow: hidden;
 }
 
@@ -24,12 +24,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: .5em;
+  margin: 0.5em;
 }
 .img-logo {
   width: 34px;
   height: 34px;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
 
 .btn-mobile {
@@ -256,7 +256,7 @@
   margin: 1em 0;
   cursor: pointer;
   outline: none;
-  transition: .4s linear;
+  transition: 0.4s linear;
 
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -264,7 +264,6 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  
 }
 
 .U-img {
@@ -302,38 +301,37 @@
 }
 /* mi info cada que le de click a un lenguaje */
 
-.U-text{
+.U-text {
   width: 80%;
   margin: 0 auto;
   padding: 1.5em 0;
 }
-.U-card-active{
+.U-card-active {
   background-color: #bfd6eba1;
   margin: 1em 0 0 0;
-  padding-top: .5em;
-  transition: .4s linear;
+  padding-top: 0.5em;
+  transition: 0.4s linear;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   cursor: pointer;
 }
-.U-info{
+.U-info {
   width: 100%;
   background-color: #bfd6eba1;
-  transition: .4s linear;
+  transition: 0.4s linear;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   display: none;
 }
-.span-active1{
+.span-active1 {
   transform: rotate(45deg);
   right: -5px;
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
-.span-active2{
+.span-active2 {
   transform: rotate(-45deg);
   right: 15px;
-  transition: .4s linear;
-
+  transition: 0.4s linear;
 }
 
 .proggres-html {
@@ -399,7 +397,7 @@
   width: 20px;
   position: relative;
   cursor: pointer;
-  transition: .4s linear;
+  transition: 0.4s linear;
 }
 .span-arrow1 {
   transform: rotate(45deg);
@@ -412,11 +410,11 @@
 
 .span-arrow1-active {
   transform: rotate(45deg);
-  animation: span1 .85s linear normal;
+  animation: span1 0.85s linear normal;
   right: -4px;
 }
 .span-arrow2-active {
-  animation: span2 .85s linear normal;
+  animation: span2 0.85s linear normal;
   transform: rotate(-45deg);
   right: 4px;
 }
@@ -447,6 +445,22 @@
   }
   100% {
     transform: rotate(-420deg);
+  }
 }
 
-/*  */
+/* projects */
+
+.text-projects {
+  width: 50%;
+  margin: 0 3em 0 0.5em;
+}
+
+.U-card-projects {
+  display: flex;
+  width: 100%;
+}
+.img-RM-projects {
+  width: 170px;
+  border-radius: 50%;
+  margin-left: 0.5em;
+}
