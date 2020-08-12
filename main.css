@@ -193,7 +193,7 @@
   background-color: #f2f2f2;
 }
 .conteiner-formacion {
-  width: 80%;
+  width: 100%;
   padding: 4em 0 2em 0;
   display: flex;
   justify-content: center;
@@ -207,7 +207,7 @@
 }
 .img-h1 img {
   width: 45px;
-  margin: 0 1em;
+  margin: 0 0.3em;
 }
 .form-h1 {
   color: rgb(79, 123, 204);
@@ -304,24 +304,23 @@
 .U-text {
   width: 80%;
   margin: 0 auto;
-  padding: 1.5em 0;
+  padding: 1.5em 0 0.8em 0;
 }
 .U-card-active {
-  background-color: #bfd6eba1;
+  /* background-color: #bfd6eba1; */
+  background-color: #401642a1;
   margin: 1em 0 0 0;
   padding-top: 0.5em;
   transition: 0.4s linear;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   cursor: pointer;
 }
 .U-info {
   width: 100%;
-  background-color: #bfd6eba1;
+  background-color: #816783c4;
+  /* background-color: #bfd6eba1; */
   transition: 0.4s linear;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
   display: none;
+  margin-bottom: 0.5em;
 }
 .span-active1 {
   transform: rotate(45deg);
@@ -385,8 +384,24 @@
   justify-content: center;
   align-items: center;
 }
+
 .proggres-sass::after {
   content: "80%";
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.proggres-git {
+  height: 20px;
+  width: 50%;
+  background-color: #5492da;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proggres-git::after {
+  content: "50%";
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -449,6 +464,25 @@
 }
 
 /* projects */
+#form-h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.title-projects {
+  margin: 1em 0;
+}
+
+.img-title-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1em 0;
+}
+.img-RM-projects {
+  width: 48px;
+  margin-right: 0.3em;
+}
 
 .text-projects {
   width: 50%;
@@ -459,8 +493,14 @@
   display: flex;
   width: 100%;
 }
-.img-RM-projects {
+
+/* .img-RM-projects {
   width: 170px;
   border-radius: 50%;
   margin-left: 0.5em;
+} */
+
+.div-challenge {
+  width: 65%;
+  margin: 0.5em auto;
 }

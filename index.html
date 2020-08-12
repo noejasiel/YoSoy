@@ -21,9 +21,7 @@
     <a name="inicio"></a>
     <nav class="navbar">
       <div class="contenedor-navbar" name="Inicio">
-        <a href="/micv/index.html"
-          ><img class="img-logo" src="./diamante.svg" alt=""
-        /></a>
+        <a href="#"><img class="img-logo" src="./diamante.svg" alt="" /></a>
         <button class="btn-mobile" id="btn">
           <span></span>
           <span></span>
@@ -216,6 +214,23 @@
               </p>
             </div>
           </div>
+          <div class="conteiner-Ucard">
+            <div class="U-card" unselectable="on">
+              <img class="U-img" src="./github.svg" alt="" srcset="" />
+              <div class="barra">
+                <div class="proggres-git"></div>
+              </div>
+              <span class="span-arrow1 span"></span>
+              <span class="span-arrow2 span"></span>
+            </div>
+            <div class="U-info">
+              <p class="U-text">
+                GitHub es una plataforma de desarrollo colaborativo de software
+                para alojar proyectos utilizando el sistema de control de
+                versiones Git
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -225,26 +240,26 @@
     <section class="Formacion">
       <div class="conteiner-formacion">
         <div class="img-h1">
-          <img src="./innovacion.svg" alt="" srcset="" />
+          <img id="form-h1" src="./innovacion.svg" alt="" srcset="" />
           <h1 class="form-h1">
-            Mi Proyectos
+            Mis Proyectos
           </h1>
         </div>
         <div class="conteiner-proyectos">
           <div class="U-project">
-            <h2>Utilizando una API</h2>
-            <hr />
-            <h3>Rick and Morty</h3>
-            <div class="U-card U-card-projects">
+            <h2 class="title-projects">Utilizando una API</h2>
+            <div class="img-title-projects">
               <img
                 class="img-RM-projects"
-                src="./rick-y-morty-portada-.png"
+                src="./icons8-rick-sanchez.svg"
                 alt=""
                 srcset=""
               />
+              <h3>Rick and Morty</h3>
+            </div>
+            <div class="U-card U-card-projects">
               <p class="text-projects">
-                conoce los personajes de la famosa calicatura de ciencia
-                ficcion, Rick and morty
+                conoce los personajes de Rick and morty
               </p>
               <span class="span-arrow1 span"></span>
               <span class="span-arrow2 span"></span>
@@ -261,19 +276,19 @@
             </div>
           </div>
           <div class="U-project">
-            <h2>Challengue Frontend Mentor</h2>
-            <hr />
-            <h3>Insure</h3>
-            <div class="U-card U-card-projects">
+            <div class="img-title-projects">
               <img
                 class="img-RM-projects"
-                src="./rick-y-morty-portada-.png"
+                src="./usuario.svg"
                 alt=""
                 srcset=""
               />
+              <h3>User Random</h3>
+            </div>
+
+            <div class="U-card U-card-projects">
               <p class="text-projects">
-                conoce los personajes de la famosa calicatura de ciencia
-                ficcion, Rick and morty
+                genera fotos y nombres aleatorias de personas ademas de un email
               </p>
               <span class="span-arrow1 span"></span>
               <span class="span-arrow2 span"></span>
@@ -282,7 +297,139 @@
               <p class="U-text">
                 ver proyecto 👉
                 <a
-                  href="https://noejasiel.github.io/Rick-and-Morty-/"
+                  href="https://noejasiel.github.io/API-random/"
+                  target="_blank"
+                  >click aqui</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="U-project">
+            <div class="img-title-projects">
+              <img class="img-RM-projects" src="./tarea.svg" alt="" srcset="" />
+              <h3>Tareas</h3>
+            </div>
+
+            <div class="U-card U-card-projects">
+              <p class="text-projects">
+                añade y elimina las tareas a tu antojo. Estas se quedaran
+                guandadas en Local Storage hasta que las elimines
+              </p>
+              <span class="span-arrow1 span"></span>
+              <span class="span-arrow2 span"></span>
+            </div>
+            <div class="U-info">
+              <p class="U-text">
+                ver proyecto 👉
+                <a href="https://noejasiel.github.io/AddTask2/" target="_blank"
+                  >click aqui</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="U-project">
+            <h2 class="title-projects">Challengue Frontend Mentor</h2>
+            <h3>Insure</h3>
+            <div class="U-card U-card-projects">
+              <p class="text-projects">
+                pagina con Aspecto minimalista
+              </p>
+              <span class="span-arrow1 span"></span>
+              <span class="span-arrow2 span"></span>
+            </div>
+            <div class="U-info">
+              <p class="U-text">
+                ver proyecto 👉
+                <a
+                  href="https://noejasiel.github.io/challenge.insure/"
+                  target="_blank"
+                  >click aqui</a
+                >
+              </p>
+            </div>
+          </div>
+          <hr class="div-challenge" />
+          <div class="U-project">
+            <h3>Fylo</h3>
+            <div class="U-card U-card-projects">
+              <p class="text-projects">
+                pagina para ser ordenado y productivo
+              </p>
+              <span class="span-arrow1 span"></span>
+              <span class="span-arrow2 span"></span>
+            </div>
+            <div class="U-info">
+              <p class="U-text">
+                ver proyecto 👉
+                <a
+                  href="https://noejasiel.github.io/challenge-Fylo/"
+                  target="_blank"
+                  >click aqui</a
+                >
+              </p>
+            </div>
+          </div>
+          <hr class="div-challenge" />
+
+          <div class="U-project">
+            <h3>Fylo Dark</h3>
+            <div class="U-card U-card-projects">
+              <p class="text-projects">
+                pagina para ser ordenado y productivo version obscura
+              </p>
+              <span class="span-arrow1 span"></span>
+              <span class="span-arrow2 span"></span>
+            </div>
+            <div class="U-info">
+              <p class="U-text">
+                ver proyecto 👉
+                <a href="https://noejasiel.github.io/Fylo-dark/" target="_blank"
+                  >click aqui</a
+                >
+              </p>
+            </div>
+          </div>
+          <hr class="div-challenge" />
+
+          <div class="U-project">
+            <h3>Registro de Usuario</h3>
+            <div class="U-card U-card-projects">
+              <p class="text-projects">
+                plantilla de registro
+              </p>
+              <span class="span-arrow1 span"></span>
+              <span class="span-arrow2 span"></span>
+            </div>
+            <div class="U-info">
+              <p class="U-text">
+                ver proyecto 👉
+                <a
+                  href="https://noejasiel.github.io/challenge.insure/"
+                  target="_blank"
+                  >click aqui</a
+                >
+              </p>
+            </div>
+          </div>
+          <hr class="div-challenge" />
+
+          <div class="U-project">
+            <h3>Huddle</h3>
+            <div class="U-card U-card-projects">
+              <p class="text-projects">
+                pantalla de registro
+              </p>
+              <span class="span-arrow1 span"></span>
+              <span class="span-arrow2 span"></span>
+            </div>
+            <div class="U-info">
+              <p class="U-text">
+                ver proyecto 👉
+                <a
+                  href="https://noejasiel.github.io/challengue/"
                   target="_blank"
                   >click aqui</a
                 >
