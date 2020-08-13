@@ -60,8 +60,8 @@ for (const iterator of U_card) {
     // a estos span les añado y les quito clases que necesito
     span_x1.classList.toggle("span-arrow1");
     span_x2.classList.toggle("span-arrow2");
-    span_x1.classList.remove("span-arrow1-active");
-    span_x2.classList.remove("span-arrow2-active");
+    // span_x1.classList.remove("span-arrow1-active");
+    // span_x2.classList.remove("span-arrow2-active");
     span_x1.classList.toggle("span-active1");
     span_x2.classList.toggle("span-active2");
   });
@@ -78,21 +78,21 @@ window.onscroll = function () {
 
   // conforme se acerque a mi apartade de tecnologia agregaraemos la clase a mis span
 
-  if (window.pageYOffset > 1200 && window.pageYOffset < 1400) {
-    for (const iterator of span1) {
-      iterator.classList.add("span-arrow1-active");
-    }
-    for (const iterator of span2) {
-      iterator.classList.add("span-arrow2-active");
-    }
-  } else {
-    for (const iterator of span1) {
-      iterator.classList.remove("span-arrow1-active");
-    }
-    for (const iterator of span2) {
-      iterator.classList.remove("span-arrow2-active");
-    }
-  }
+  // if (window.pageYOffset > 1200 && window.pageYOffset < 1400) {
+  //   for (const iterator of span1) {
+  //     iterator.classList.add("span-arrow1-active");
+  //   }
+  //   for (const iterator of span2) {
+  //     iterator.classList.add("span-arrow2-active");
+  //   }
+  // } else {
+  //   for (const iterator of span1) {
+  //     iterator.classList.remove("span-arrow1-active");
+  //   }
+  //   for (const iterator of span2) {
+  //     iterator.classList.remove("span-arrow2-active");
+  //   }
+  // }
 };
 
 // btn ancla del menu
