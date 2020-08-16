@@ -644,13 +644,13 @@ footer {
     width: auto;
   }
   .conteiner-hero h1 {
-    font-size: 35px;
+    font-size: 20px;
   }
   p {
-    font-size: 25px;
+    font-size: 20px;
   }
   .U-text-formacion {
-    font-size: 25px;
+    font-size: 20px;
   }
   .input-email-name {
     width: 80%;
@@ -689,14 +689,12 @@ footer {
     display: block;
   }
   nav {
-    height: 85px;
+    height: 56px;
   }
   .menu a {
     color: #16db93;
     text-decoration: none;
-    font-size: 20px;
     margin: 0 0.5em;
-    font-weight: 1000;
   }
   .menu a:hover {
     padding-bottom: 0.6em;
@@ -710,8 +708,8 @@ footer {
   }
   .img-logo {
     margin-left: 2em;
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
   }
   .conteiner-lenguajes {
     display: flex;
@@ -748,7 +746,7 @@ footer {
     margin-bottom: 2em;
   }
   h3 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .text-projects {
     width: 70%;
@@ -819,8 +817,9 @@ footer {
   .title-contacto {
     grid-area: titulo;
     text-align: center;
-    margin-bottom: 4em;
-    font-size: 30px;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    font-size: 23px;
   }
   .img-contacto {
     grid-area: img;
@@ -847,7 +846,7 @@ footer {
     width: 90%;
   }
   .input-email-name {
-    font-size: 23px;
+    font-size: 18px;
   }
   .input-email- .hr-promotional {
     display: block;
@@ -859,5 +858,8 @@ footer {
   }
   .progges {
     height: 26px;
+  }
+  .redes-footer {
+    display: flex;
   }
 }
