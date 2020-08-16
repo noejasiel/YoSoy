@@ -7,22 +7,28 @@ var desplace;
 
 // animacion
 
-console.log(window.screen.height);
+console.log(window.screen.width);
 
-function Comprobar(info) {
+function Comprobar(info /*, info_padre*/) {
   // console.log(info.style);
   if (info.style.display == "") {
     return (info.style.display = "block");
   } else {
     return (info.style.display = "");
   }
+  // if (info_padre.style.boxShadow != "") {
+  //   return (info_padre.style.boxShadow = "none");
+  // } else {
+  //   return (info_padre.style.boxShadow = "0px 0px 20px -9px #00335b");
+  // }
 }
 
-btn.addEventListener("click", function hola() {
+btn.addEventListener("click", function () {
   btn.classList.toggle("btn-mobile-activo");
   menu = btn.nextElementSibling;
   menu.classList.toggle("menu-mobile");
   redes.classList.toggle("redes-sociales-activo");
+  console.log(padre_nav.parentElement);
   padre_nav.parentElement.classList.toggle("hidden");
 
   // existe mi clase navbar-activo
@@ -56,7 +62,14 @@ for (const iterator of U_card) {
     // añadiendo mis span de cada iteraciona  una variable
     span_x1 = iterator.querySelector("span");
     span_x2 = iterator.querySelector("span").nextElementSibling;
-    Comprobar(info);
+    // info.style.transition = " all .4s  linear 0s";
+
+    // Comprobar(info.parentElement);
+
+    info.classList.toggle("U-info");
+    info.children[0].classList.toggle("U-text");
+    Comprobar(info.children[0] /*,info.parentElement*/);
+    // .style.display = "block";
     // a estos span les añado y les quito clases que necesito
     span_x1.classList.toggle("span-arrow1");
     span_x2.classList.toggle("span-arrow2");
@@ -105,6 +118,8 @@ var btn_tecnologia = document.getElementById("bnt-tecnologia");
 
 // funcionalidad a mis botones de la barra de nav menu
 btn_inicio.addEventListener("click", function () {
+  console.log(btn_inicio);
+
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
   padre_nav.parentElement.classList.toggle("hidden");
