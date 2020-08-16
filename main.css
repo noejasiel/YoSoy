@@ -74,9 +74,9 @@
   position: absolute;
   width: 60%;
   right: -1px;
-  top: 50px;
+  top: 49px;
   height: 100vh;
-  background-color: #f2f2f2;
+  background-color: white;
   transition: 0.3s linear;
   background-image: url("./assets/bg-pattern-footer-mobile.svg");
   background-repeat: no-repeat;
@@ -88,12 +88,13 @@
   text-decoration: none;
   color: #252525;
   margin: 1em 0;
-  padding: 1em;
+  padding: 1em 100%;
   transition: 0.3s linear;
 }
 .menu-mobile a:hover {
-  background-color: #578ef3;
+  background-color: #16db93;
   border-radius: 10px;
+  outline: none;
 }
 .menu-mobile a:first-child {
   margin-top: 2em;
@@ -102,12 +103,12 @@
   margin-top: 4em;
 }
 .menu .redes-sociales-activo a {
-  padding: 0 0.4em;
+  padding: 0 0.1em;
   background-color: transparent;
 }
 
 .navbar-activo {
-  background-color: #f2f2f2;
+  background-color: white;
   /* border-bottom: 1px solid #6584b338; */
   box-shadow: -6px 2px 16px -6px #16db93;
 }
@@ -176,6 +177,7 @@
   width: 30px;
   height: 30px;
   size: 1em;
+  padding: 0 0.1em;
 }
 .redes-sociales a i {
   color: #16db93;
@@ -207,6 +209,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 .img-h1 img {
   width: 45px;
@@ -225,21 +228,41 @@
 
 .polaroid {
   width: 100%;
-  position: relative;
-  background: #f2f2f2;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  transition: 0.2s linear;
-  margin: 2em 0 2em 0;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  margin: 3em auto 0 auto;
 }
-
-.polaroid:hover {
-  transform: scale(0.98);
-  box-shadow: 5px 3px 9px -2px rgba(75, 74, 74, 0.904);
-  background: #f3f1f1;
+.img-formacion {
+  width: 150px;
+}
+.img-formacion img {
+  max-width: 100%;
+  max-height: 100%;
+  height: 150px;
+}
+.conteiner-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* .pnt {
+  display: block;
+  position: relative;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 50%;
+  left: 0;
+} */
+.aling {
+  margin: 1em 0;
+}
+.U-text-formacion {
+  margin: 0 0.5em;
+  font-size: 14px;
+  font-size: 20px;
 }
 
 .text-form {
@@ -308,6 +331,10 @@
   width: 80%;
   margin: 0 auto;
   padding: 1.5em 0 0.8em 0;
+  transition: 0.4s linear;
+}
+#U-text {
+  display: none;
 }
 .U-card-active {
   /* background-color: #bfd6eba1; */
@@ -315,7 +342,7 @@
   background-color: #2a9d8fed;
   margin: 1em 0 0 0;
   padding: 0.5em 0;
-  transition: 0.4s linear;
+  transition: 0.2s linear;
   cursor: pointer;
 }
 .U-info {
@@ -324,7 +351,6 @@
   background-color: #2a9d8fc9;
   /* background-color: #bfd6eba1; */
   transition: 0.4s linear;
-  display: none;
   margin-bottom: 0.5em;
 }
 .span-active1 {
@@ -539,6 +565,7 @@ form {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  width: 80%;
 }
 .input-email-name {
   border: none;
@@ -547,6 +574,7 @@ form {
   border-bottom: 1px solid #ff5364;
   color: white;
   margin: 0.4em 0 1em 0;
+  width: 80%;
 }
 .input-email-name::placeholder {
   /* color: #ff5364; */
@@ -598,4 +626,238 @@ footer {
 }
 #a-footer {
   color: white;
+}
+.title-contacto {
+  color: white;
+}
+@media (max-width: 400px) {
+  .polaroid {
+    width: auto;
+  }
+  .U-text-formacion {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 700px) {
+  .polaroid {
+    width: auto;
+  }
+  .conteiner-hero h1 {
+    font-size: 35px;
+  }
+  p {
+    font-size: 25px;
+  }
+  .U-text-formacion {
+    font-size: 25px;
+  }
+  .input-email-name {
+    width: 80%;
+  }
+  form {
+    width: 50%;
+  }
+  .input-email-name::placeholder {
+    /* color: #ff5364; */
+    color: #16db93;
+    font-size: 25px;
+  }
+}
+.hr-promotional {
+  display: none;
+}
+@media (min-width: 1280px) {
+  .Hero {
+    height: 85vh;
+    background-image: none;
+    /* background-image: url("./assets/fernando-hernandez-JdoofvUDUwc-unsplash\ \(2\).jpg"); */
+    /* background-image: url("./assets/steve-halama-Yhc7YGZlz3g-unsplash.jpg"); */
+    background-image: url("./assets/safar-safarov-LKsHwgzyk7c-unsplash.jpg ");
+    background-position: unset;
+    background-position-y: -160px;
+    /* background-position-y: -1660px; */
+    /* background-position-x: -200px; */
+  }
+  .Formacion {
+    background-image: url("./assets/bg-pattern-intro-right-desktop.svg");
+  }
+  .btn-mobile {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  nav {
+    height: 85px;
+  }
+  .menu a {
+    color: #16db93;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 0.5em;
+    font-weight: 1000;
+  }
+  .menu a:hover {
+    padding-bottom: 0.6em;
+    border-bottom: 3px solid #16db93;
+  }
+  .barra {
+    height: 36px;
+  }
+  #redes {
+    display: none;
+  }
+  .img-logo {
+    margin-left: 2em;
+    width: 70px;
+    height: 70px;
+  }
+  .conteiner-lenguajes {
+    display: flex;
+    justify-content: space-around;
+  }
+  .conteiner3,
+  .conteiner6 {
+    width: 48%;
+  }
+  .conteiner-Ucard {
+    padding: 1em 0;
+  }
+  .div-challenge {
+    display: none;
+  }
+  .API {
+    display: grid;
+    grid-template-areas:
+      "A B"
+      "C C";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+  .areaA {
+    grid-area: A;
+    margin-bottom: 1em;
+  }
+  .areaB {
+    grid-area: B;
+    margin-bottom: 1em;
+  }
+  .areaC {
+    grid-area: C;
+    margin-bottom: 2em;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  .text-projects {
+    width: 70%;
+  }
+  .U-text {
+    padding: 0.2em;
+  }
+  .hr-desktop {
+    height: 1px;
+    background-color: black;
+  }
+  .img-formacion img {
+    position: relative;
+    bottom: -29px;
+  }
+  .conteiner-challengues-grid {
+    display: grid;
+    grid-template-areas:
+      "T T "
+      "x y"
+      "w v"
+      "z z";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+  }
+  .areaT {
+    grid-area: T;
+  }
+  .area1 {
+    grid-area: x;
+  }
+  .area2 {
+    grid-area: y;
+  }
+  .area3 {
+    grid-area: w;
+  }
+  .area4 {
+    grid-area: v;
+  }
+  .area5 {
+    grid-area: z;
+  }
+  .U-project {
+    margin-bottom: 2em;
+    /* border: 0.5px solid gray; */
+    box-shadow: 0px 0px 20px -9px #00335b;
+  }
+  .U-info {
+    margin-bottom: 0;
+    padding: 1em 0;
+  }
+  .span {
+    background-color: gold;
+  }
+  .conteiner-formacion {
+    padding: 6em 0 2em 0;
+  }
+  .conteiner-promocional {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo"
+      "img parrafo1"
+      "img parrafo2"
+      "img hr"
+      "img formulario";
+  }
+  .title-contacto {
+    grid-area: titulo;
+    text-align: center;
+    margin-bottom: 4em;
+    font-size: 30px;
+  }
+  .img-contacto {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-promocional {
+    width: 300px;
+  }
+  .text-promocional1 {
+    grid-area: parrafo1;
+  }
+  .text-promocional2 {
+    grid-area: parrafo2;
+  }
+  .form {
+    grid-area: formulario;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 3em auto;
+    width: 90%;
+  }
+  .input-email-name {
+    font-size: 23px;
+  }
+  .input-email- .hr-promotional {
+    display: block;
+    grid-area: hr;
+  }
+  .submit-input {
+    font-size: 20px;
+    width: 250px;
+  }
+  .progges {
+    height: 26px;
+  }
 }
