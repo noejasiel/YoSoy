@@ -21,6 +21,7 @@
   justify-content: space-between;
 }
 .contenedor-navbar {
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -73,8 +74,8 @@
   flex-direction: column;
   position: absolute;
   width: 60%;
-  right: -1px;
-  top: 49px;
+  right: -10px;
+  top: 47px;
   height: 100vh;
   background-color: white;
   transition: 0.3s linear;
@@ -83,6 +84,7 @@
   background-size: contain;
   box-shadow: -3px 8px 16px -6px #16db93;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .menu-mobile a {
   text-decoration: none;
@@ -100,7 +102,7 @@
   margin-top: 2em;
 }
 .redes-sociales-activo {
-  margin-top: 4em;
+  margin-top: 1em;
 }
 .menu .redes-sociales-activo a {
   padding: 0 0.1em;
@@ -514,6 +516,7 @@
 .img-RM-projects {
   width: 48px;
   margin-right: 0.3em;
+  margin-top: 0.4em;
 }
 
 .text-projects {
@@ -701,7 +704,7 @@ footer {
     border-bottom: 3px solid #16db93;
   }
   .barra {
-    height: 36px;
+    height: 32px;
   }
   #redes {
     display: none;
@@ -805,7 +808,7 @@ footer {
   .conteiner-formacion {
     padding: 6em 0 2em 0;
   }
-  .conteiner-promocional {
+  /* .conteiner-promocional {
     display: grid;
     grid-template-areas:
       "titulo titulo"
@@ -813,6 +816,16 @@ footer {
       "img parrafo2"
       "img hr"
       "img formulario";
+  } */
+  .conteiner-promocional {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .PromocionalDIV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .title-contacto {
     grid-area: titulo;
@@ -828,7 +841,8 @@ footer {
     align-items: center;
   }
   .img-promocional {
-    width: 300px;
+    width: 250px;
+    margin: 0 4em 3em 4em;
   }
   .text-promocional1 {
     grid-area: parrafo1;
@@ -862,4 +876,54 @@ footer {
   .redes-footer {
     display: flex;
   }
+}
+
+.ObraNegra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.Banner {
+  width: 100%;
+  background-color: #00335b;
+  position: sticky;
+  top: 0;
+  z-index: 110;
+  display: flex;
+  justify-content: space-around;
+}
+.prueba {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.textBanner {
+  width: 100%;
+  color: white;
+  margin: 0 0.4em;
+  text-align: center;
+}
+.img-close-Banner {
+  width: 30px;
+  cursor: pointer;
+}
+
+.new_ObraNegra {
+  width: 40px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  transform: rotate(-45deg);
+}
+.textOBRA {
+  margin: 0.5em 0;
+}
+.titleOBRA {
+  padding: 0.5em 0;
+}
+.correo {
+  color: #252525;
 }

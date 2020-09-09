@@ -116,13 +116,24 @@ var btn_proyectos = document.getElementById("bnt-proyectos");
 var btn_contacto = document.getElementById("bnt-contacto");
 var btn_tecnologia = document.getElementById("bnt-tecnologia");
 
+console.log(btn_inicio);
 // funcionalidad a mis botones de la barra de nav menu
+
+if (window.screen.width >= 1280) {
+  padre_nav.parentElement.classList.remove("hidden");
+}
+
 btn_inicio.addEventListener("click", function () {
   console.log(btn_inicio);
 
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
-  padre_nav.parentElement.classList.toggle("hidden");
+
+  if (window.screen.width >= 1280) {
+    padre_nav.parentElement.classList.remove("hidden");
+  } else {
+    padre_nav.parentElement.classList.toggle("hidden");
+  }
 
   if (window.pageYOffset < 200) {
     btn.parentElement.parentElement.classList.remove("navbar-activo");
@@ -131,20 +142,49 @@ btn_inicio.addEventListener("click", function () {
 btn_formacion.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
-  padre_nav.parentElement.classList.toggle("hidden");
+
+  if (window.screen.width >= 1280) {
+    padre_nav.parentElement.classList.remove("hidden");
+  } else {
+    padre_nav.parentElement.classList.toggle("hidden");
+  }
 });
 btn_tecnologia.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
-  padre_nav.parentElement.classList.toggle("hidden");
+
+  if (window.screen.width >= 1280) {
+    padre_nav.parentElement.classList.remove("hidden");
+  } else {
+    padre_nav.parentElement.classList.toggle("hidden");
+  }
 });
 btn_proyectos.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
-  padre_nav.parentElement.classList.toggle("hidden");
+
+  if (window.screen.width >= 1280) {
+    padre_nav.parentElement.classList.remove("hidden");
+  } else {
+    padre_nav.parentElement.classList.toggle("hidden");
+  }
 });
 btn_contacto.addEventListener("click", function () {
   btn.classList.remove("btn-mobile-activo");
   btn.nextElementSibling.classList.remove("menu-mobile");
-  padre_nav.parentElement.classList.toggle("hidden");
+
+  if (window.screen.width >= 1280) {
+    padre_nav.parentElement.classList.remove("hidden");
+  } else {
+    padre_nav.parentElement.classList.toggle("hidden");
+  }
+});
+
+// banner
+
+var cerrar = document.getElementById("banner");
+cerrar.addEventListener("click", function () {
+  var padre = cerrar.parentElement;
+  console.log(padre);
+  padre.style.display = "none";
 });
