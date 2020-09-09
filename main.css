@@ -314,7 +314,7 @@
 /* barras de progreso */
 .proggres-c {
   height: 20px;
-  width: 75%;
+  width: 65%;
   background-color: #5492da;
   border-radius: 10px;
   display: flex;
@@ -323,7 +323,7 @@
 }
 /* porcentaje dentro de la barra de progreso  👇    */
 .proggres-c::after {
-  content: "75%";
+  content: "65%";
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -382,7 +382,7 @@
 }
 .proggres-css {
   height: 20px;
-  width: 80%;
+  width: 70%;
   background-color: #5492da;
   border-radius: 10px;
   display: flex;
@@ -390,11 +390,25 @@
   align-items: center;
 }
 .proggres-css::after {
-  content: "80%";
+  content: "70%";
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .proggres-js {
+  height: 20px;
+  width: 60%;
+  background-color: #5492da;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.proggres-js::after {
+  content: "60%";
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.proggres-sass {
   height: 20px;
   width: 70%;
   background-color: #5492da;
@@ -403,23 +417,9 @@
   justify-content: center;
   align-items: center;
 }
-.proggres-js::after {
-  content: "70%";
-  font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-.proggres-sass {
-  height: 20px;
-  width: 80%;
-  background-color: #5492da;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .proggres-sass::after {
-  content: "80%";
+  content: "70%";
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
