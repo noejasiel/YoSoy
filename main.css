@@ -915,7 +915,7 @@ footer {
   width: 40px;
   position: absolute;
   right: 30px;
-  top: 30px;
+  top: -10px;
   transform: rotate(-45deg);
 }
 .textOBRA {
