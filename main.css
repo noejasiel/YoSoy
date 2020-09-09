@@ -632,6 +632,7 @@ footer {
 }
 .title-contacto {
   color: white;
+  margin-bottom: 2em;
 }
 @media (max-width: 400px) {
   .polaroid {
@@ -817,40 +818,37 @@ footer {
       "img hr"
       "img formulario";
   } */
-  .conteiner-promocional {
+  /* .conteiner-promocional {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .PromocionalDIV {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  } */
+  #PromocionalDIV {
+    flex-direction: inherit;
   }
   .title-contacto {
-    grid-area: titulo;
+    /* grid-area: titulo; */
     text-align: center;
     margin-bottom: 2em;
     margin-top: 1em;
     font-size: 23px;
   }
   .img-contacto {
-    grid-area: img;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* grid-area: img; */
+
+    margin: 0 auto;
   }
   .img-promocional {
     width: 250px;
     margin: 0 4em 3em 4em;
   }
-  .text-promocional1 {
+  /* .text-promocional1 {
     grid-area: parrafo1;
   }
   .text-promocional2 {
     grid-area: parrafo2;
-  }
-  .form {
+  } */
+  /* .form {
     grid-area: formulario;
     display: flex;
     align-items: center;
@@ -869,7 +867,7 @@ footer {
   .submit-input {
     font-size: 20px;
     width: 250px;
-  }
+  } */
   .progges {
     height: 26px;
   }
@@ -926,4 +924,11 @@ footer {
 }
 .correo {
   color: #252525;
+}
+.PromocionalDIV {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.textPromocional {
 }
